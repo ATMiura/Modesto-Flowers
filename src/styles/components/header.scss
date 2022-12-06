@@ -1,0 +1,92 @@
+@import "../variables";
+
+.header {
+  padding: 8px 0;
+
+  @media (min-width: $md) {
+    padding: 20px 0;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: $md) and (max-width: 1199px) {
+      padding: 0 16px;
+    }
+  }
+
+  &__logo {
+    min-width: 48px;
+    width: 48px;
+
+    @media (min-width: $md) {
+      width: auto;
+    }
+  }
+
+  &__nav {
+    display: none;
+    order: 1;
+
+    @media (min-width: $desktop) {
+      display: block;
+      order: initial;
+    }
+  }
+
+  &-right {
+    display: flex;
+    align-items: center;
+
+    &__item {
+      &:not(:first-child) {
+        margin-left: 8px;
+
+        @media (min-width: $md) {
+          margin-left: 20px;
+        }
+
+        @media(min-width: $desktop) {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &__phone {
+    padding: 0 8px;
+
+    @media (min-width: $md) {
+      padding: 0 30px;
+    }
+  }
+
+  &__lang {
+
+  }
+
+  &__login {
+    display: none;
+
+    @media (min-width: $md) {
+      display: block;
+    }
+
+    @media (min-width: $desktop) {
+      &:not(:first-child) {
+        margin-left: 25px;
+      }
+    }
+
+    .button {
+      height: 49px;
+      line-height: 47px;
+
+      &:last-child {
+        margin-left: 5px;
+      }
+    }
+  }
+}

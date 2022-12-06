@@ -1,0 +1,60 @@
+@import "../variables";
+
+.section-form {
+  padding: 20px;
+  background: url("../images/section-form-bg.png") no-repeat top center;
+
+  @media (min-width: $md) {
+    padding: 0;
+    background: none;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 200px 0;
+    background: url("../images/section-form-bg.png") no-repeat top center;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    padding: 20px;
+    background: var(--color-bg);
+
+    @media (min-width: $md) {
+      gap: 58px;
+      padding: 72px 32px 71px;
+      max-width: 688px;
+    }
+
+    @media (min-width: $desktop) {
+      gap: 80px;
+      padding: 80px;
+      max-width: 1140px;
+      background: url("../images/form-bg.png") no-repeat top center, #fff;
+    }
+  }
+
+  &__left {
+    width: 100%;
+
+    @media (min-width: $desktop) {
+      flex: 1 1;
+    }
+
+    h2 {
+      margin-bottom: 32px;
+
+      @media (min-width: $md) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__right {
+    @media (min-width: $desktop) {
+      min-width: 320px;
+    }
+  }
+}

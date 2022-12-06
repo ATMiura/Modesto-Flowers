@@ -1,0 +1,19 @@
+@import "../variables";
+
+.svg-icons {
+  display: none;
+}
+
+.i-email {
+  width: 24px;
+  height: 24px;
+}
+.i-burger {
+  width: 30px;
+  height: 30px;
+
+  @media (min-width: $md) {
+    width: 40px;
+    height: 40px;
+  }
+}

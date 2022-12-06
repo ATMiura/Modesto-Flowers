@@ -1,0 +1,82 @@
+@import "../variables";
+
+.banner {
+  display: flex;
+  align-items: center;
+
+  padding: 94px 0 123px;
+  //min-height: calc(100vh - 126px);
+  text-align: center;
+
+  @media (min-width: $md) {
+    padding: 60px 0 209px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 166px 0 294px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .button {
+      &--yellow,
+      &--grey {
+        padding: 0;
+        max-width: 156px;
+        width: 100%;
+
+        @media (min-width: $md) {
+          max-width: initial;
+          width: auto;
+        }
+      }
+
+      &--yellow {
+        @media (min-width: $md) {
+          padding: 0 34px;
+        }
+      }
+      &--grey {
+        @media (min-width: $md) {
+          padding: 0 42px;
+        }
+      }
+    }
+  }
+
+  &__title {
+    br {
+      display: none;
+
+      @media (min-width: $desktop) {
+        display: initial;
+      }
+    }
+  }
+
+  &__description {
+    margin: 24px 0;
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+
+    br {
+      display: none;
+
+      @media (min-width: $md) {
+        display: initial;
+      }
+    }
+
+    @media (min-width: $md) {
+      margin: 40px 0 59px;
+
+      font-size: 26px;
+      line-height: 31px;
+    }
+  }
+}

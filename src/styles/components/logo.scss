@@ -1,0 +1,11 @@
+.logo {
+  &__link {
+    font-size: 0;
+    line-height: 1;
+  }
+  &__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,27 @@
+@import "./variables";
+
+h1,.h1,
+h2,.h2,
+h3,.h3 {
+  font-family: 'Marmelad', sans-serif;
+  font-weight: normal;
+  color: var(--color-main);
+}
+h1, .h1 {
+  font-size: 24px;
+  line-height: 29px;
+
+  @media (min-width: $md) {
+    font-size: 56px;
+    line-height: 67px;
+  }
+}
+h2, .h2 {
+  font-size: 24px;
+  line-height: 29px;
+
+  @media (min-width: $md) {
+    font-size: 36px;
+    line-height: 43px;
+  }
+}
