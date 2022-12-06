@@ -8,8 +8,21 @@
   //min-height: calc(100vh - 126px);
   text-align: center;
 
+  background-image: url("../images/banner-bg-mobile.png") ;
+  background-color: var(--color-bg);
+  background-repeat: no-repeat;
+  background-position: center top -23px;
+  background-size: cover;
+
   @media (min-width: $md) {
     padding: 60px 0 209px;
+
+    background-image: url("../images/banner-bg-tablet.png");
+    background-position: center top -49px;
+  }
+
+  @media (min-width: $tablet) {
+    background: none;
   }
 
   @media (min-width: $desktop) {

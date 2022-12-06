@@ -12,17 +12,11 @@ body {
   font-size: 16px;
   line-height: 19px;
 
-  background-image: url("../images/banner-bg-mobile.png") ;
   background-color: var(--color-bg);
-  background-repeat: no-repeat;
-  background-position: center top 35px;
 
   @media (min-width: $md) {
     font-size: 18px;
     line-height: 21px;
-
-    background-image: url("../images/banner-bg-tablet.png");
-    background-position: center top 77px;
   }
 
   @media (min-width: 992px) {
